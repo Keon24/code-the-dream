@@ -3,37 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Marvel Collection</title>
 </head>
 <body>
-    <div class="container">
-    <label for="name">Search</label>
-         <input type="text" id="searchbar" name="name" placeholder="Marvel Characters..">
-         <button id="search-button">search</button>
+    <div class="navbar">
+        <label for="name">Search</label>
+        <input type="text" id="searchbar" name="name" placeholder="Marvel Characters..">
+        <button id="search-button">Search</button>
     </div>
     <section>
-        <h1>Welcome to the marvel collection</h1>
-        <p>Marvel is a fictional universe that was created by Stan Lee and Jack Kirby in 1961</p>
-     
+        <h1>Welcome to the Marvel Collection</h1>
+        <p>Marvel is a fictional universe that was created by Stan Lee and Jack Kirby in 1961.</p>
     </section>
     <div class="marvel-card">
-        <div class="card-1"></div>
-        <div class="card-2"></div>
-        <div class="card-3"></div>
-        <div class="card-4"></div>
-        <div class="card-5"></div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 1')">Marvel Character 1</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 1')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 1')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 2')">Marvel Character 2</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 2')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 2')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 2')">Marvel Character 2</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 2')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 2')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 2')">Marvel Character 2</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 2')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 2')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 2')">Marvel Character 2</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 2')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 2')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 2')">Marvel Character 2</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 2')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 2')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 2')">Marvel Character 2</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 2')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 2')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 2')">Marvel Character 2</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 2')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 2')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 3')">Marvel Character 3</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 3')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 3')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 4')">Marvel Character 4</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 4')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 4')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 5')">Marvel Character 5</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 5')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 5')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 6')">Marvel Character 6</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 6')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 6')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 7')">Marvel Character 7</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 7')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 7')">Button 2</button>
+            </div>
+        </div>
+        <div class="card">
+            <div onclick="openModal('Marvel Character 8')">Marvel Character 8</div>
+            <div class="card-buttons">
+                <button class="btn1" onclick="viewDetails('Character 8')">Button 1</button>
+                <button class="btn2" onclick="addToFavorites('Character 8')">Button 2</button>
+            </div>
+        </div>
     </div>
 
     <div id="modal" class='modal'>
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <p id="modal-details">What is this suppose to say</p>
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-details">What is this supposed to say</p>
         </div>
     </div>
-   
-
-    
 </body>
 </html>
